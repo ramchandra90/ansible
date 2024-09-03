@@ -10,12 +10,12 @@
     ansible.builtin.debug:
       msg: "Hi, I am leaning {{COURSE}}, Duration is: {{DURATION}}, Trainer: {{TRAINER}}"
 
-  - name: print the information
+  - name: print the information again
     Vars:
       Course: "Ansible"
     ansible.builtin.debug:
       msg: "Hi, I am leaning {{COURSE}}, Duration is: {{DURATION}}, Trainer: {{TRAINER}}"
 
-  - name: print the information again
+  - name: print the information again and again
     ansible.builtin.debug:
       msg: "Hi, I am leaning {{COURSE}}, Duration is: {{DURATION}}, Trainer: {{TRAINER}}"   
