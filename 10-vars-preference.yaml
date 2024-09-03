@@ -4,7 +4,9 @@
     COURSE: "DevOps with AWS from PLAY level"
     DURATION: "120HRS"
     TRAINER: "Sivakumar Reddy"
+  vars_files:
   vars_prompt:
+   - vars.yaml
   - name: COURSE
     prompt: print the course name
     private: false
