@@ -8,12 +8,6 @@
   - name: COURSE
     prompt: print the course name
     private: false
-  - name: TRAINER
-    prompt: print the trainer name
-    private: false
-  - name: DURATION
-    prompt: print the duration name
-    private: false
   tasks:
   - name: print the information
     vars:
@@ -21,4 +15,4 @@
       DURATION: "120HRS"
       TRAINER: "Sivakumar Reddy"
     ansible.builtin.debug:
-      msg: "Hi, I am leaning {{COURSE}}, Duration is: {{DURATION}}, Trainer: {{TRAINER}}"
+      msg: "Hi, I am leaning {{COURSE}}"
