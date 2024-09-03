@@ -11,7 +11,7 @@
       msg: "Hi, I am leaning {{COURSE}}, Duration is: {{DURATION}}, Trainer: {{TRAINER}}"
 
   - name: print the information again
-    Vars:
+    vars:
       Course: "Ansible"
     ansible.builtin.debug:
       msg: "Hi, I am leaning {{COURSE}}, Duration is: {{DURATION}}, Trainer: {{TRAINER}}"
