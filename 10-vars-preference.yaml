@@ -7,7 +7,7 @@
   vars_files:
   - vars.yaml
   vars_prompt:
-   - name: COURSE
+  - name: COURSE
     prompt: print the course name
     private: false
   tasks:
