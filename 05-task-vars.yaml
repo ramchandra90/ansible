@@ -12,7 +12,7 @@
 
   - name: print the information again
     vars:
-      Course: "Ansible"
+      COURSE: "Ansible"
     ansible.builtin.debug:
       msg: "Hi, I am leaning {{COURSE}}, Duration is: {{DURATION}}, Trainer: {{TRAINER}}"
 
