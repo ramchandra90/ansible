@@ -16,6 +16,6 @@
     ansible.builtin.debug:
       msg: "Hi, I am leaning {{COURSE}}, Duration is: {{DURATION}}, Trainer: {{TRAINER}}"
 
-   - name: print the information again
+  - name: print the information again
      ansible.builtin.debug:
       msg: "Hi, I am leaning {{COURSE}}, Duration is: {{DURATION}}, Trainer: {{TRAINER}}"   
