@@ -1,6 +1,6 @@
 - name: variables from prompt
   hosts: web
-  vars_Prompt:
+  vars_prompt:
   - name: COURSE
     prompt: print the course name
   - name: TRAINER
