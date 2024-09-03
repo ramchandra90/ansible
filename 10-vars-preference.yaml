@@ -1,0 +1,24 @@
+- name: variables to print
+  hosts: web
+  vars:
+    COURSE: "DevOps with AWS from PLAY level"
+    DURATION: "120HRS"
+    TRAINER: "Sivakumar Reddy"
+  vars_prompt:
+  - name: COURSE
+    prompt: print the course name
+    private: false
+  - name: TRAINER
+    prompt: print the trainer name
+    private: false
+  - name: DURATION
+    prompt: print the duration name
+    private: false
+  tasks:
+  - name: print the information
+    vars:
+      COURSE: "DevOps with AWS from TASK level"
+      DURATION: "120HRS"
+      TRAINER: "Sivakumar Reddy"
+    ansible.builtin.debug:
+      msg: "Hi, I am leaning {{COURSE}}, Duration is: {{DURATION}}, Trainer: {{TRAINER}}"
