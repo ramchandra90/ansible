@@ -5,9 +5,9 @@
     DURATION: "120HRS"
     TRAINER: "Sivakumar Reddy"
   vars_files:
+  - vars.yaml
   vars_prompt:
-   - vars.yaml
-  - name: COURSE
+   - name: COURSE
     prompt: print the course name
     private: false
   tasks:
