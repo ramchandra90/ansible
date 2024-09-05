@@ -47,4 +47,4 @@
       value: "{{ item.instances[0].public_ip_address }}"
       wait: true
     loop: "{{ ec2_instances.results}}"
-    when: ec2_instances.results.item == "frontend"
+    when: item.item == "frontend"
