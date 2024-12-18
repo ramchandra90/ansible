@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    subnet_id: subnet-044bdd3ab6b3324e6
+    subnet_id: subnet-044bdd3ab6b3324e6 # replace with current subnet id
     sg_id: "sg-0e79b62f544fbce6e"
     ami_id: "ami-09c813fb71547fc4f"
     instances:
@@ -55,4 +55,4 @@
       wait: true
       overwrite: true
     loop: "{{ ec2_instances.results}}"
-    when: item.item == "frontend"
+    when: item.item == "frontend" # condition
